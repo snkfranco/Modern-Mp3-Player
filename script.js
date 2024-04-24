@@ -9,6 +9,7 @@ const artistName = document.querySelector(".music-player p");
 const volumeSlider = document.getElementById("volumeSlider");
 const volumeIcon = document.querySelector(".fa-volume-high");
 
+
 const songs = [
   {
     title: "Mockingbird",
@@ -202,3 +203,4 @@ volumeSlider.addEventListener("input", function() {
     volumeIcon.classList.add("fa-volume-high");
   }
 });
+
