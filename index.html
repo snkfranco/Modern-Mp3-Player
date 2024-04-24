@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Music Player with Slider | Swiper JS</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'><link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <div class="volume-container">
+      <i class="fa-solid fa-volume-high volume-icon"></i>
+      <input type="range" min="0" max="1" step="0.01" value="0.6" id="volumeSlider" inputmode="decimal">
+    </div>
+    
+    <div class="album-cover">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./images/eminem.png" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCfM3zsQsOnfWNUppiycmBuw"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/Falling-TrevorDaniel.png" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCLvAxkjgDXIrO-IDNIBgnEg"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/travis.jpg" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/@Waltrus"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/twentyonepilots.png" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCBQZwaNPFfJ1gZ1fLZpAEGw"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/billieeilish.png" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/benson boone.png" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCvILah8hAWYhYOmAG3ZjvBA"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/dancin.png" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCHawCX0CQ3HopRIJgNQjVZg"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/stromae.jpg" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCXF0YCBWewAj3RytJUAivGA"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./images/thenbhd.jpg" />
+            <div class="overlay">
+              <a
+                href="https://www.youtube.com/channel/UCDAXusYwRJpiSP2CHnXnVnw"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="music-player">
+      <h1>Title</h1>
+      <p>Song Name</p>
+
+      <audio id="song">
+        <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
+      </audio>
+
+      <input type="range" value="0" id="progress" />
+
+      <div class="controls">
+        <button class="backward">
+          <i class="fa-solid fa-backward"></i>
+        </button>
+        <button class="play-pause-btn">
+          <i class="fa-solid fa-play" id="controlIcon"></i>
+        </button>
+        <button class="forward">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+      <div class="footer">
+        <p>Made with ♥ by Franco</p>
+      </div>
+    </div>
+  </body>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
