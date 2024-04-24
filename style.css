@@ -212,19 +212,24 @@ body {
   font-size: 1.1rem;
   box-shadow: 0 10px 20px rgba(5, 36, 28, 0.3);
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 .controls button:is(:hover, :focus-visible) {
-  transform: scale(0.96);
+  transform: scale(1.1);
 }
 
 .controls button:nth-child(2) {
-  transform: scale(1.3);
+  width: 70px;
 }
 
+
+/* .controls button:nth-child(2) {
+  transform: scale(1.3);
+} */
+
 .controls button:nth-child(2):is(:hover, :focus-visible) {
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -232,4 +237,13 @@ body {
   position: fixed;
   bottom: 0;
   margin-bottom: 5%;
+}
+
+#app canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
