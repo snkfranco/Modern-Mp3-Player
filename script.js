@@ -137,25 +137,54 @@ volumeSlider.addEventListener("input", function () {
 
 updateSongInfo();
 
-var swiper = new Swiper(".swiper", {
-  effect: "coverflow",
-  centeredSlides: true,
-  initialSlide: 3,
-  slidesPerView: "auto",
-  allowTouchMove: false,
-  spaceBetween: 100,
-  coverflowEffect: {
-    rotate: 10,
-    stretch: 0,
-    depth: 200,
-    modifier: 1.1,
-    slideShadows: false,
-  },
-  navigation: {
-    nextEl: ".forward",
-    prevEl: ".backward",
-  },
-});
+function updateSwiperModifier() {
+
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth < 600) {
+    var swiper = new Swiper(".swiper", {
+      effect: "coverflow",
+      centeredSlides: true,
+      initialSlide: 3,
+      slidesPerView: "auto",
+      allowTouchMove: false,
+      spaceBetween: 100,
+      coverflowEffect: {
+        rotate: 10,
+        stretch: 0,
+        depth: 300,
+        modifier: 2,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: ".forward",
+        prevEl: ".backward",
+      },
+    });
+  } else {
+    var swiper = new Swiper(".swiper", {
+      effect: "coverflow",
+      centeredSlides: true,
+      initialSlide: 3,
+      slidesPerView: "auto",
+      allowTouchMove: false,
+      spaceBetween: 100,
+      coverflowEffect: {
+        rotate: 10,
+        stretch: 0,
+        depth: 170,
+        modifier: 1.2,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: ".forward",
+        prevEl: ".backward",
+      },
+    });
+  }
+}
+
+updateSwiperModifier();
 
 volumeSlider.addEventListener("input", function() {
   const volumeValue = parseFloat(this.value);
